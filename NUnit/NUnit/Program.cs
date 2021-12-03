@@ -22,6 +22,16 @@ namespace NUnit
                         temp.Conversion();
                         break;
                     case 3:
+                        Console.WriteLine("enter the principal");
+                        double princ = Convert.ToDouble(Console.ReadLine());
+                        Console.WriteLine("Enter the year");
+                        double year = Convert.ToDouble(Console.ReadLine());
+                        Console.WriteLine("enter the rate");
+                        double rate = Convert.ToDouble(Console.ReadLine());
+                        MonthlyPayment pay = new MonthlyPayment();
+                        pay.Payment(princ, year, rate);
+                        break;
+                    case 4:
                         flag = false;
                         break;
                     default:
